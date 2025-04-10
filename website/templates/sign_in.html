@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Title - SignIn{% endblock %}
+
+{% block description %}
+Description - SignIn</br> 
+Welcome!
+
+{% if user %}
+{{user}}!
+{% elif not user %}
+"Anonymous!"
+{% else %}
+"Hacker!"
+{% endif %} </br>
+
+Have a nice day!
+{% endblock %}
